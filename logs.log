@@ -7459,3 +7459,270 @@ Name: target, Length: 3218, dtype: int64
 9384     0
 Name: target, Length: 3218, dtype: int64
 2022-09-16 15:58:54,540:INFO:get_config() succesfully completed......................................
+2022-09-16 16:30:57,366:INFO:Initializing ensemble_model()
+2022-09-16 16:30:57,366:INFO:ensemble_model(estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=14, max_features=1.0, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0001, min_impurity_split=None,
+                       min_samples_leaf=2, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=0, splitter='best'), method=Boosting, fold=None, n_estimators=10, round=4, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, display=None, return_train_score=False)
+2022-09-16 16:30:57,369:INFO:Checking exceptions
+2022-09-16 16:30:58,399:INFO:Preparing display monitor
+2022-09-16 16:30:58,444:INFO:Importing libraries
+2022-09-16 16:30:58,445:INFO:Copying training dataset
+2022-09-16 16:30:58,448:INFO:Checking base model
+2022-09-16 16:30:58,449:INFO:Base model : Decision Tree Classifier
+2022-09-16 16:30:58,546:INFO:Importing untrained ensembler
+2022-09-16 16:30:58,548:INFO:Ensemble method set to Boosting
+2022-09-16 16:30:58,551:INFO:SubProcess create_model() called ==================================
+2022-09-16 16:30:58,556:INFO:Initializing create_model()
+2022-09-16 16:30:58,557:INFO:create_model(estimator=AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=14,
+                                                         max_features=1.0,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0001,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=2,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x00000258C80AB940>, return_train_score=False, kwargs={})
+2022-09-16 16:30:58,558:INFO:Checking exceptions
+2022-09-16 16:30:58,558:INFO:Importing libraries
+2022-09-16 16:30:58,558:INFO:Copying training dataset
+2022-09-16 16:30:58,562:INFO:Defining folds
+2022-09-16 16:30:58,562:INFO:Declaring metric variables
+2022-09-16 16:30:58,584:INFO:Importing untrained model
+2022-09-16 16:30:58,584:INFO:Declaring custom model
+2022-09-16 16:30:58,611:INFO:Decision Tree Classifier Imported succesfully
+2022-09-16 16:30:58,645:INFO:Starting cross validation
+2022-09-16 16:30:58,647:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-09-16 16:31:13,164:INFO:Calculating mean and std
+2022-09-16 16:31:13,166:INFO:Creating metrics dataframe
+2022-09-16 16:31:13,192:INFO:Finalizing model
+2022-09-16 16:31:14,301:INFO:Uploading results into container
+2022-09-16 16:31:14,301:INFO:Uploading model into container now
+2022-09-16 16:31:14,301:INFO:create_model_container: 33
+2022-09-16 16:31:14,302:INFO:master_model_container: 33
+2022-09-16 16:31:14,302:INFO:display_container: 4
+2022-09-16 16:31:14,305:INFO:AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=14,
+                                                         max_features=1.0,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0001,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=2,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0)
+2022-09-16 16:31:14,305:INFO:create_model() succesfully completed......................................
+2022-09-16 16:31:14,944:INFO:SubProcess create_model() end ==================================
+2022-09-16 16:31:15,092:INFO:create_model_container: 33
+2022-09-16 16:31:15,093:INFO:master_model_container: 33
+2022-09-16 16:31:15,094:INFO:display_container: 4
+2022-09-16 16:31:15,097:INFO:AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=14,
+                                                         max_features=1.0,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0001,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=2,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0)
+2022-09-16 16:31:15,097:INFO:ensemble_model() succesfully completed......................................
+2022-09-16 16:32:50,804:INFO:Initializing ensemble_model()
+2022-09-16 16:32:50,805:INFO:ensemble_model(estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=14, max_features=1.0, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0001, min_impurity_split=None,
+                       min_samples_leaf=2, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=0, splitter='best'), method=Boosting, fold=None, n_estimators=10, round=4, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, display=None, return_train_score=False)
+2022-09-16 16:32:50,805:INFO:Checking exceptions
+2022-09-16 16:32:51,636:INFO:Preparing display monitor
+2022-09-16 16:32:51,666:INFO:Importing libraries
+2022-09-16 16:32:51,666:INFO:Copying training dataset
+2022-09-16 16:32:51,669:INFO:Checking base model
+2022-09-16 16:32:51,669:INFO:Base model : Decision Tree Classifier
+2022-09-16 16:32:51,701:INFO:Importing untrained ensembler
+2022-09-16 16:32:51,701:INFO:Ensemble method set to Boosting
+2022-09-16 16:32:51,701:INFO:SubProcess create_model() called ==================================
+2022-09-16 16:32:51,706:INFO:Initializing create_model()
+2022-09-16 16:32:51,706:INFO:create_model(estimator=AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=14,
+                                                         max_features=1.0,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0001,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=2,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x00000258C80A2EE0>, return_train_score=False, kwargs={})
+2022-09-16 16:32:51,706:INFO:Checking exceptions
+2022-09-16 16:32:51,706:INFO:Importing libraries
+2022-09-16 16:32:51,706:INFO:Copying training dataset
+2022-09-16 16:32:51,710:INFO:Defining folds
+2022-09-16 16:32:51,710:INFO:Declaring metric variables
+2022-09-16 16:32:51,731:INFO:Importing untrained model
+2022-09-16 16:32:51,731:INFO:Declaring custom model
+2022-09-16 16:32:51,751:INFO:Decision Tree Classifier Imported succesfully
+2022-09-16 16:32:51,783:INFO:Starting cross validation
+2022-09-16 16:32:51,784:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-09-16 16:32:53,553:INFO:Calculating mean and std
+2022-09-16 16:32:53,555:INFO:Creating metrics dataframe
+2022-09-16 16:32:53,580:INFO:Finalizing model
+2022-09-16 16:32:54,526:INFO:Uploading results into container
+2022-09-16 16:32:54,527:INFO:Uploading model into container now
+2022-09-16 16:32:54,528:INFO:create_model_container: 34
+2022-09-16 16:32:54,528:INFO:master_model_container: 34
+2022-09-16 16:32:54,528:INFO:display_container: 5
+2022-09-16 16:32:54,528:INFO:AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=14,
+                                                         max_features=1.0,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0001,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=2,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0)
+2022-09-16 16:32:54,528:INFO:create_model() succesfully completed......................................
+2022-09-16 16:32:54,761:INFO:SubProcess create_model() end ==================================
+2022-09-16 16:32:54,825:INFO:create_model_container: 34
+2022-09-16 16:32:54,826:INFO:master_model_container: 34
+2022-09-16 16:32:54,826:INFO:display_container: 5
+2022-09-16 16:32:54,831:INFO:AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=14,
+                                                         max_features=1.0,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0001,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=2,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0)
+2022-09-16 16:32:54,831:INFO:ensemble_model() succesfully completed......................................
+2022-09-16 16:33:34,325:INFO:Initializing ensemble_model()
+2022-09-16 16:33:34,325:INFO:ensemble_model(estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=0, splitter='best'), method=Boosting, fold=None, n_estimators=10, round=4, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, display=None, return_train_score=False)
+2022-09-16 16:33:34,326:INFO:Checking exceptions
+2022-09-16 16:33:34,469:INFO:Preparing display monitor
+2022-09-16 16:33:34,514:INFO:Importing libraries
+2022-09-16 16:33:34,514:INFO:Copying training dataset
+2022-09-16 16:33:34,516:INFO:Checking base model
+2022-09-16 16:33:34,517:INFO:Base model : Decision Tree Classifier
+2022-09-16 16:33:34,567:INFO:Importing untrained ensembler
+2022-09-16 16:33:34,568:INFO:Ensemble method set to Boosting
+2022-09-16 16:33:34,569:INFO:SubProcess create_model() called ==================================
+2022-09-16 16:33:34,574:INFO:Initializing create_model()
+2022-09-16 16:33:34,574:INFO:create_model(estimator=AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=None,
+                                                         max_features=None,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=1,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x00000258C8679D90>, return_train_score=False, kwargs={})
+2022-09-16 16:33:34,575:INFO:Checking exceptions
+2022-09-16 16:33:34,575:INFO:Importing libraries
+2022-09-16 16:33:34,575:INFO:Copying training dataset
+2022-09-16 16:33:34,578:INFO:Defining folds
+2022-09-16 16:33:34,578:INFO:Declaring metric variables
+2022-09-16 16:33:34,605:INFO:Importing untrained model
+2022-09-16 16:33:34,605:INFO:Declaring custom model
+2022-09-16 16:33:34,631:INFO:Decision Tree Classifier Imported succesfully
+2022-09-16 16:33:34,702:INFO:Starting cross validation
+2022-09-16 16:33:34,702:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-09-16 16:33:35,171:INFO:Calculating mean and std
+2022-09-16 16:33:35,174:INFO:Creating metrics dataframe
+2022-09-16 16:33:35,199:INFO:Finalizing model
+2022-09-16 16:33:35,345:INFO:Uploading results into container
+2022-09-16 16:33:35,346:INFO:Uploading model into container now
+2022-09-16 16:33:35,346:INFO:create_model_container: 35
+2022-09-16 16:33:35,346:INFO:master_model_container: 35
+2022-09-16 16:33:35,346:INFO:display_container: 6
+2022-09-16 16:33:35,348:INFO:AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=None,
+                                                         max_features=None,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=1,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0)
+2022-09-16 16:33:35,348:INFO:create_model() succesfully completed......................................
+2022-09-16 16:33:35,577:INFO:SubProcess create_model() end ==================================
+2022-09-16 16:33:35,615:INFO:create_model_container: 35
+2022-09-16 16:33:35,615:INFO:master_model_container: 35
+2022-09-16 16:33:35,615:INFO:display_container: 6
+2022-09-16 16:33:35,619:INFO:AdaBoostClassifier(algorithm='SAMME.R',
+                   base_estimator=DecisionTreeClassifier(ccp_alpha=0.0,
+                                                         class_weight=None,
+                                                         criterion='gini',
+                                                         max_depth=None,
+                                                         max_features=None,
+                                                         max_leaf_nodes=None,
+                                                         min_impurity_decrease=0.0,
+                                                         min_impurity_split=None,
+                                                         min_samples_leaf=1,
+                                                         min_samples_split=2,
+                                                         min_weight_fraction_leaf=0.0,
+                                                         presort='deprecated',
+                                                         random_state=0,
+                                                         splitter='best'),
+                   learning_rate=1.0, n_estimators=10, random_state=0)
+2022-09-16 16:33:35,619:INFO:ensemble_model() succesfully completed......................................
