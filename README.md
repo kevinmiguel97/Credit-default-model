@@ -9,6 +9,10 @@
 ### <center> *Kevin M. Figueroa*
 ### <center> *September 19th 2022*
 
+________________________________________________________________________________________________________________________________________________________________________
+
+## Documents:
+
 ### [Executive report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_report.ipynb)
 
 ### [Methodologic report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_model.ipynb)
