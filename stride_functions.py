@@ -1,3 +1,35 @@
+# Function that explotes data shapes
+def shapes_exploration(df_train, df_test):
+    """
+    Explores the shapes and columns of training and testing dataset
+
+    Parameters:
+    -----------
+    df_train : dataframe
+        Training dataframe
+    
+    df_test : dataframe
+        Training dataframe
+
+    Returns:
+    --------
+    None
+    """
+    # Training datset shape
+    print('Training dataset')
+    print('- Observations:', str(df_train.shape[0]))
+    print('- Attributes:', str(df_train.shape[1] - 2))                             # ID and Target are not explicative variables
+    print('- Target:', str(1))
+    # Testing dataset
+    print('Testing dataset')
+    print('- Observations:', str(df_test.shape[0]))
+    print('- Attributes:', str(df_test.shape[1] - 1))                              # ID is not an actual attribute
+    # Verifying variables
+    if list(df_train.columns[0:-1]) == list(df_test.columns): 
+        print('Same columns: No issues')
+
+#//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 # Function to summarize data
 def summary_stats(data, title):  
     """
