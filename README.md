@@ -13,6 +13,10 @@ ________________________________________________________________________________
 
 ## Documents:
 
-### [Executive report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_report.ipynb)
+- ### [Executive report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_report.ipynb)
 
-### [Methodologic report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_model.ipynb)
+- ### [Methodologic report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_model.ipynb)
+
+- ### [Library of functions created](https://github.com/kevinmiguel97/Credit-default-model/blob/main/stride_functions.py)
+
+- ### [Final predictions](https://github.com/kevinmiguel97/Credit-default-model/tree/main/predictions)
