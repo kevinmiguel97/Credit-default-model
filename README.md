@@ -3,10 +3,16 @@
     <br>
 </h3>
 
-#  <center> **Early warning model for credit default**
-## <center> **Repository**
+# <center> **Early warning model for credit default**
+## <center> **Executive report**
+### <center> **Funding Credit team**
 ### <center> Analysts:
 ### <center> *Kevin M. Figueroa*
 ### <center> *September 19th 2022*
+________________________________________________________________________________________________________________________________________________________________________
 
-### Follow the [Methodologic report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_model.ipynb)
+## Documents:
+
+### [Executive report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_report.ipynb)
+
+### [Methodologic report notebook](https://github.com/kevinmiguel97/Credit-default-model/blob/main/Credit_default_model.ipynb)
