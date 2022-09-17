@@ -248,10 +248,24 @@ def standarize(data):
 
 # ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+# Illustrative table of cases
+def possible_outcomes():
+    # Create table with all potential outcomes of a classification process
+    concepts = pd.DataFrame(np.array([['True negative', 'False positive'],
+                                    ['False negative', 'True positive']]))
+
+    concepts.columns = ['Predicted Non-default', 'Predicted Default']
+    concepts.index = ['Non-default', 'Default']
+
+    print('Table 4. Possible outcomes'.center(48))
+    return concepts
+
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 # Function to generate confusion matrix
 def plot_confusion_matrix(y_target, y_predicted, title = 'Confusion Matrix of classifier'):
     """ 
-    Creates a confusion matrix
+    Creates a confusion matrix 
     
     Parameters:
     -----------
