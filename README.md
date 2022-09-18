@@ -20,3 +20,5 @@ ________________________________________________________________________________
 - ### [Library of functions created](https://github.com/kevinmiguel97/Credit-default-model/blob/main/stride_functions.py)
 
 - ### [Final predictions](https://github.com/kevinmiguel97/Credit-default-model/tree/main/predictions)
+
+- ### [Case dashboard](https://github.com/kevinmiguel97/Credit-default-model/tree/main/predictions)
