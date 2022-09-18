@@ -4,7 +4,7 @@
 </h3>
 
 # <center> **Early warning model for credit default**
-## <center> **Executive report**
+## <center> **Repositoryt**
 ### <center> **Funding Credit team**
 ### <center> Analysts:
 ### <center> *Kevin M. Figueroa*
