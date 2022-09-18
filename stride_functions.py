@@ -1,3 +1,27 @@
+# Libraries
+# Standard libraries
+import numpy as np
+import pandas as pd
+# Plotting libraries
+import matplotlib.pyplot as plt 
+import seaborn as sns
+# Machine learning libraries
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, precision_score, recall_score, confusion_matrix, precision_recall_curve
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from scipy.stats import ks_2samp
+# Date and time libraries
+import datetime as dt
+import time as tm
+# Keep graphs in line
+# Show all columns in pandas
+pd.set_option('display.max_columns', 500)
+# Graphing style
+plt.style.use('seaborn-colorblind')
+
+#///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 # Function that explotes data shapes
 def shapes_exploration(df_train, df_test):
     """
@@ -27,11 +51,12 @@ def shapes_exploration(df_train, df_test):
     # Verifying variables
     if list(df_train.columns[0:-1]) == list(df_test.columns): 
         print('Same columns: No issues')
-
+    return None
 #//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # Function to summarize data
 def summary_stats(data, title):  
+    import pandas as pd
     """
     Generates a Summary table containing the most relevant information of a dataset
 
@@ -52,7 +77,7 @@ def summary_stats(data, title):
     df_describe = data.describe().round(decimals=2).transpose()                                 # Generate summary statistics
     _ = pd.merge(df_missingval, df_types, how='inner', left_index=True, right_index=True)       # Intermediate merge types and missing val
     df_var_summary = pd.merge(df_describe, _ , how='outer', left_index=True, right_index=True)  # Final merge 
-    #df_var_summary.loc['date_of_birth', 'count'] = len(data.index)                             # Replace count of date_of_birth
+    # df_var_summary.loc['date_of_birth', 'count'] = len(data.index)                             # Replace count of date_of_birth
     print(title.center(120))
 
     return df_var_summary
@@ -62,6 +87,7 @@ def summary_stats(data, title):
 # Function that computes new variables for any of the datasets
 
 def gen_variables(data):
+    import pandas as pd
     """ 
     Creates the list of new variables mentioned in section 1. 
     
@@ -268,6 +294,7 @@ def standarize(data):
     dataframe
         A dataframe with the data standarized on the selected columns
     """
+
     # Rescaling selected attributed
     scaler = MinMaxScaler()                         # Create scaler object 
     scaler.fit(data)                                # Fit the data
@@ -295,7 +322,7 @@ def possible_outcomes():
 # //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # Function to generate confusion matrix
-def plot_confusion_matrix(y_target, y_predicted, title = 'Confusion Matrix of classifier'):
+def plot_confusion_matrix(y_target, y_predicted, normalize = True, title = 'Confusion Matrix of classifier'):
     """ 
     Creates a confusion matrix 
     
@@ -307,13 +334,22 @@ def plot_confusion_matrix(y_target, y_predicted, title = 'Confusion Matrix of cl
     y_predicted : array
         predicted values of y
 
+    normalize : bool
+        Control if matrix values are normalized
+        
     Returns:
     --------
     Dictionary with metrics
 
     """
+
+    # Converting normalize value
+    if normalize != None:
+        normalize = str(normalize).lower()
+
     # Genrate confusion matrix
-    cm = confusion_matrix(y_target, y_predicted, normalize='true')
+    cm = confusion_matrix(y_target, y_predicted, normalize=normalize)
+
     # Generate heatmap
     sns.heatmap(cm, annot=True, cmap='BrBG')
     # Compute metrics
@@ -329,5 +365,4 @@ def plot_confusion_matrix(y_target, y_predicted, title = 'Confusion Matrix of cl
     plt.ylabel('True')
 
     plt.show()
-
     return None
